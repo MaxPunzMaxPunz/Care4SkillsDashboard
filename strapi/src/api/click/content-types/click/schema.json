@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clicks",
+  "info": {
+    "singularName": "click",
+    "pluralName": "clicks",
+    "displayName": "Click"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "skill": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::skill.skill"
+    },
+    "job_title": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::job-title.job-title"
+    }
+  }
+}
