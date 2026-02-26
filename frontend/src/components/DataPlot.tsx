@@ -12,7 +12,7 @@ function DataPlot() {
   useEffect(() => {
     const fetchAllClicks = async () => {
       try {
-        const response = await fetch("http://localhost:1337/api/clicks/all");
+        const response = await fetch("https://care4skillsback.duckdns.org/api/clicks/all");
 
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 
