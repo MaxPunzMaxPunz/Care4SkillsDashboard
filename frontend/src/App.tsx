@@ -9,7 +9,6 @@ function App() {
   return (
     <>
       <div className="flex">
-        <TestRandomSkill />
         <DataPlot />
       </div>
     </>
