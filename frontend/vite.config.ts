@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: true,
-    allowedHosts: ["care4skillsfront.duckdns.org"], // your frontend domain
+    allowedHosts: ["care4skillsdash.duckdns.org"], // your frontend domain
   },
   css: {
     postcss: {
