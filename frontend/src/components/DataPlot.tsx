@@ -72,8 +72,10 @@ function DataPlot() {
 
   return (
     <div className="w-full">
-      <h2 className="font-bold text-lg mb-2">All Clicks</h2>
-      {clicks.length === 0 ? <p>No clicks yet.</p> : <Bar data={data} options={options} />}
+      <div className="w-1/2">
+        <h2 className="font-bold text-lg mb-2">All Clicks</h2>
+        {clicks.length === 0 ? <p>No clicks yet.</p> : <Bar data={data} options={options} />}
+      </div>
     </div>
   );
 }
