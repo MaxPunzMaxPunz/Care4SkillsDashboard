@@ -7,7 +7,13 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: true,
-    allowedHosts: ["care4skillsdash.duckdns.org"], // your frontend domain
+    proxy: {
+      "/api": {
+        target: "https://care4skillsback.duckdns.org",
+        changeOrigin: true,
+        secure: true,
+      },
+    },
   },
   css: {
     postcss: {

@@ -13,7 +13,7 @@ function TestRandomSkill() {
   useEffect(() => {
     const fetchRandomSkills = async () => {
       try {
-        const response = await fetch("https://care4skillsback.duckdns.org/api/skills/random");
+        const response = await fetch("/api/skills/random");
 
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 
@@ -40,7 +40,7 @@ function TestRandomSkill() {
     if (input) jobTitle = input.value;
     console.log(id + " " + jobTitle);
 
-    await fetch("https://care4skillsback.duckdns.org/api/clicks", {
+    await fetch("/api/clicks", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
